@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+//    var restaurantPlist = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+//        Below needs the Table view in order to display
+//        let path = NSBundle.mainBundle().pathForResource("RestaurantPList", ofType: "plist")
+//        let dict = NSDictionary(contentsOfFile: path!)
+//        
+//        tableData = dict!.objectForKey("Restaurant") as! [String]
     }
 
     override func didReceiveMemoryWarning() {

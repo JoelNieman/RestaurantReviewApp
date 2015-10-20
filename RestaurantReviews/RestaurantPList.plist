@@ -2,11 +2,79 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Address</key>
+	<array>
+		<string>17810 E Eight Mile Rd, Harper Woods, MI 48225</string>
+		<string></string>
+		<string>500 Woodward Ave, Detroit, MI 48226</string>
+		<string>4235 Woodward Ave, Detroit, MI 48201</string>
+		<string>8201 Woodward Ave, Detroit, MI 48202</string>
+	</array>
+	<key>ClosesAt</key>
+	<dict>
+		<key>5PM</key>
+		<false/>
+		<key>6PM</key>
+		<false/>
+		<key>7PM</key>
+		<false/>
+		<key>8PM</key>
+		<false/>
+		<key>9PM</key>
+		<false/>
+		<key>10PM</key>
+		<false/>
+		<key>11PM</key>
+		<false/>
+		<key>Midnight</key>
+		<false/>
+		<key>1AM</key>
+		<false/>
+		<key>2AM</key>
+		<false/>
+	</dict>
+	<key>OpensAt</key>
+	<dict>
+		<key>7AM</key>
+		<false/>
+		<key>8AM</key>
+		<false/>
+		<key>9AM</key>
+		<false/>
+		<key>10AM</key>
+		<false/>
+		<key>11AM</key>
+		<false/>
+		<key>Noon</key>
+		<false/>
+		<key>1PM</key>
+		<false/>
+		<key>2PM</key>
+		<false/>
+		<key>3PM</key>
+		<false/>
+		<key>4PM</key>
+		<false/>
+		<key>5PM</key>
+		<false/>
+		<key>6PM</key>
+		<false/>
+	</dict>
+	<key>Thumbnail</key>
+	<array>
+		<string>appleb.jpg</string>
+		<string>sizzler.jpg</string>
+		<string>townhouse.jpg</string>
+		<string>mickeyd.jpg</string>
+		<string>burgerking.jpg</string>
+	</array>
 	<key>Restaurants</key>
 	<array>
-		<string>Applebees</string>
+		<string>Applebee&apos;s</string>
 		<string>Sizzler</string>
-		<string>Bazooki</string>
+		<string>Townhouse</string>
+		<string>McDonald&apos;s</string>
+		<string>Burger King</string>
 	</array>
 </dict>
 </plist>
