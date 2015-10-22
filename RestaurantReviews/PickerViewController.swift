@@ -45,8 +45,7 @@ class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             return mealType[row] }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let vc = segue.destinationViewController as! RestaurantListTableViewController
-        vc.mealType = mealTypeSelected
+        let vc = segue.destinationViewController as! RestaurantsListTableViewController
 
     }
 }

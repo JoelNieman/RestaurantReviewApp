@@ -9,32 +9,31 @@
 import Foundation
 
 class Restaurant {
-
+    
     var name: String
-    //    Didn't set name as an optional because I'm not sure if it is necessary yet. Let's talk about this.
-    
     var address: String?
-    //    var location:
-    //    need to figure out the data type of this. Probably depends on what comes from the API call.
-    //    var distance: Double?
-    var phoneNumber: String?
-
-    var cuisineType: String?
-    //    i.e., american, chinese, etc.
-    
-    var breakfast: Bool?
-    var lunch: Bool?
-    var dinner: Bool?
-    var bar: Bool?
-    //    true or false indicating if they serve these categories of meals or have a bar.
-    
-    var rating: Int?
+    var city: String?
+    var states: String?
+    var zipCode: String?
+    var imageURL: NSURL?
+    var categories: String?
+    var mobileURL: NSURL?
     var price: Int?
-    //    these will be 1-5 values which will be converted to bananas. Considering creating an enum for this to restrict the values to 1,2,3,4, & 5.
+    var phoneNumber: String?
+    var rating: Int?
     
-    init(name: String) {
-    self.name = name }
-    //    Only initializing the name because the rest of the values are optional. I'm avoiding requiring the user to add all the values to add a new restaurant. only the name is necessary this way. Open to thoughts.
-    
+    init(name: String, address: String?, city: String?, states: String?, zipCode: String?, imageURL: NSURL?, categories: String?, mobileURL: NSURL?, price: Int?, phoneNumber: String?, rating: Int?){
+        self.name = name
+        self.address = address
+        self.city = city
+        self.states = states
+        self.zipCode = zipCode
+        self.imageURL = imageURL
+        self.categories = categories
+        self.mobileURL = mobileURL
+        self.price = price
+        self.phoneNumber = phoneNumber
+        self.rating = rating
 }
 
+}

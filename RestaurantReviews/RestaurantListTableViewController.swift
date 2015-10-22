@@ -48,7 +48,7 @@ class RestaurantsListTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("restaurantCell", forIndexPath: <#T##NSIndexPath#>)
+        let cell = tableView.dequeueReusableCellWithIdentifier("restaurantCell", forIndexPath: indexPath)
         cell.textLabel?.text = breakfastRestArray[indexPath.row].name
         return cell
     }
