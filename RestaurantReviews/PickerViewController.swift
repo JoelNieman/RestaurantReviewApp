@@ -9,12 +9,11 @@
 import UIKit
 
 class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
+    var mealTypeSelected = ""
 
     @IBOutlet weak var categoryPicker: UIPickerView!
-    private let categoryComponent = 0
-    private let priceComponent = 1
-    private let categories = ["Breakfast", "Lunch", "Dinner", "Late Night"]
-    private let prices = ["Cheap", "Average", "Expensive"]
+
+    private let mealType = ["Breakfast", "Lunch", "Dinner"]
     
     
     override func viewDidLoad() {
@@ -27,40 +26,27 @@ class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerView
 
 
     @IBAction func seeResultsButtonPressed(sender: AnyObject) {
-
-        let categoryRow = categoryPicker.selectedRowInComponent(0)
-        let priceRow = categoryPicker.selectedRowInComponent(1)
-        
-        let categorySelected = categories[categoryRow]
-        let priceSelected = prices[priceRow]
-        
+        let mealTypeRow = categoryPicker.selectedRowInComponent(0)
+        mealTypeSelected = mealType[mealTypeRow] }
+    
         // the row and categorySelected constants will be used to call restaurants from the yelp API.
 
         // ERIKA's SUGGESTION IS TO REPLACE THIS FUNCTION WITH A PREPARE FOR SEGUE FUNCTION AND INCLUDE THE SAME CODES + PROVIDE THE VALUE FOR THE API CALL TO YELP.
-        
-    }
 
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 2
+        return 1
     }
     
     func pickerView(pickerView:UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if component == categoryComponent {
-            return categories.count
-        } else {
-            return prices.count
-        }
-    }
+        return mealType.count }
+
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if component == categoryComponent {
-            return categories[row]
-        } else {
-            return prices[row]
-        }
-    }
+            return mealType[row] }
     
-    @IBAction override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        <#code#>
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vc = segue.destinationViewController as! RestaurantListTableViewController
+        vc.mealType = mealTypeSelected
+
     }
 }
