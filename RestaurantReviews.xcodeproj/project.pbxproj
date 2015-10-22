@@ -18,6 +18,8 @@
 		5D81D4DE1BD6D594002D5ABA /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81D4DD1BD6D594002D5ABA /* PickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		5D81D4E11BD6DBA9002D5ABA /* RestaurantListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81D4E01BD6DBA9002D5ABA /* RestaurantListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		5D81D4E31BD6DBC6002D5ABA /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81D4E21BD6DBC6002D5ABA /* RestaurantDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5DE278921BD96029004A39A2 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE278911BD96029004A39A2 /* Business.swift */; settings = {ASSET_TAGS = (); }; };
+		5DE278941BD960ED004A39A2 /* YelpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE278931BD960ED004A39A2 /* YelpClient.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		5D81D4DD1BD6D594002D5ABA /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		5D81D4E01BD6DBA9002D5ABA /* RestaurantListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListTableViewController.swift; sourceTree = "<group>"; };
 		5D81D4E21BD6DBC6002D5ABA /* RestaurantDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewController.swift; sourceTree = "<group>"; };
+		5DE278911BD96029004A39A2 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		5DE278931BD960ED004A39A2 /* YelpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		5D81D46F1BD5A134002D5ABA /* RestaurantReviews */ = {
 			isa = PBXGroup;
 			children = (
+				5DE278901BD95FF8004A39A2 /* API */,
 				5D81D4DF1BD6DB7E002D5ABA /* Views */,
 				5D81D49E1BD5A1C2002D5ABA /* Model */,
 				5D81D4701BD5A134002D5ABA /* AppDelegate.swift */,
@@ -139,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				5D81D49F1BD5A1EB002D5ABA /* Restaurant.swift */,
+				5DE278911BD96029004A39A2 /* Business.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -151,6 +157,14 @@
 				5D81D4E21BD6DBC6002D5ABA /* RestaurantDetailsViewController.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		5DE278901BD95FF8004A39A2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5DE278931BD960ED004A39A2 /* YelpClient.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,8 +301,10 @@
 				5D81D4711BD5A134002D5ABA /* AppDelegate.swift in Sources */,
 				5D81D4E31BD6DBC6002D5ABA /* RestaurantDetailsViewController.swift in Sources */,
 				5D81D4DE1BD6D594002D5ABA /* PickerViewController.swift in Sources */,
+				5DE278921BD96029004A39A2 /* Business.swift in Sources */,
 				5D81D4E11BD6DBA9002D5ABA /* RestaurantListTableViewController.swift in Sources */,
 				5D81D4A01BD5A1EB002D5ABA /* Restaurant.swift in Sources */,
+				5DE278941BD960ED004A39A2 /* YelpClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
