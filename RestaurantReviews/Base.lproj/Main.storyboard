@@ -22,7 +22,7 @@
                                 <state key="normal" title="See Restaurants!"/>
                                 <connections>
                                     <action selector="seeResultsButtonPressed:" destination="Tbp-aO-UhD" eventType="touchDown" id="Mjp-Su-3mc"/>
-                                    <segue destination="nce-6N-w0b" kind="show" id="ee9-sk-nTn"/>
+                                    <segue destination="nce-6N-w0b" kind="show" identifier="seeTableView" id="ge1-qh-K8G"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kR2-CS-MO3">
@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="2928" y="179"/>
         </scene>
-        <!--Restaurant List Table View Controller-->
+        <!--Restaurants List Table View Controller-->
         <scene sceneID="Ta0-SJ-82U">
             <objects>
-                <tableViewController id="nce-6N-w0b" customClass="RestaurantListTableViewController" customModule="RestaurantReviews" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="nce-6N-w0b" customClass="RestaurantsListTableViewController" customModule="RestaurantReviews" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ovu-bP-kOu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +73,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8NP-NW-Uzp" id="mHq-BV-UVZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -86,6 +86,7 @@
                             <outlet property="delegate" destination="nce-6N-w0b" id="xWy-yV-yuT"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="EEP-Eo-rEH"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UFK-Dr-ITu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
